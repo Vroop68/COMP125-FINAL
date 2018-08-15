@@ -9,7 +9,7 @@
               addressBook = JSON.parse(this.responseText);
               console.log("Data finished loading");
     
-              add();
+              add();    
     
               //displayData();
             }
@@ -20,6 +20,14 @@
 
       }
       
+      function createContacts() {
+        addressBook.Contacts.forEach(contact => {
+          let newContact = new objects.Contact(
+            contact.firstName, contact.lastName, contact.contactNumber, contact.emailAddress);
+          Contacts.push(newContact);
+        });
+      }
+    
       
 
     function Start() {
