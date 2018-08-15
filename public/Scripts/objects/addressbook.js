@@ -5,14 +5,9 @@
         }
         
         // complete the addressbook class
+        //meant to be method which creates new objects in address book based on contacts. I was unable to complete
         add(){
-            function createContacts() {
-                AddressBook.Contacts.forEach(contact => {
-                  let newContact = new objects.Contact(
-                    contact.firstName, contact.lastName, contact.contactNumber, contact.emailAddress);
-                  Contacts.push(newContact);
-                });
-              }
+           let newContact= new Contact();
         }
     }
 

@@ -6,7 +6,7 @@ let objects;
             this.firstName = firstName;
             this.lastName = lastName;
             this.contactNumber = contactNumber;
-            this.emailAddress = emailAddress;
+            this.emailAddress = email;
         }
     }
 
